@@ -11,3 +11,5 @@ sample_hash = {
       }
    }
 }
+
+p sample_hash.dig(:class, :student, "marks", "history")
