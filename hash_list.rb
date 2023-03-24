@@ -15,7 +15,7 @@ list_of_people = [
 ]
 
 list_of_people.each do |person|
-  if person[:age] <= 16
+  if person[:age] >= 16
     puts person[:name]
   end
 end
