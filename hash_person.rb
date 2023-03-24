@@ -6,11 +6,8 @@ person = {}
 
 input = gets.chomp.split(" ")
 
-#iterate over the input
-input.each do |key|
   #push attributes to the array
-  person.store(:first_name, input[0])
-  person.store(:age, input[1].to_i)
-  person.store(:occupation, input[2])
+  person[:name] = input[0]
+  person[:age] = input[1].to_i
+  person[:occupation] = input[2]
   puts person
-end
